@@ -81,7 +81,7 @@ full/empty are the values before the edge. Each request is handled by the rules 
 - full = (count == DEPTH)
 - empty = (count == 0)
 
-full, empty, count and rd_data have to come from registered state only. They can't change combinationally when wr_en, rd_en or wr_data change mid-cycle.
+   full, empty, count and rd_data must depend only on registered state: no combinational path from wr_en, rd_en or wr_data to any output. Decoding a register is fine (e.g. full = (count == DEPTH)); each output doesn't have to be its own flop.
 
 ## Example (DEPTH = 4)
 
