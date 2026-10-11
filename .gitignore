@@ -1,0 +1,28 @@
+# Vivado generated files
+.Xil/
+.cache/
+.hw/
+.ip_user_files/
+.sim/
+.runs/
+.gen/
+*.jou
+*.log
+*.str
+*.pb
+*.wdb
+*.wcfg
+
+# Vivado project generated files
+fifo_xsim.cache/
+fifo_xsim.hw/
+fifo_xsim.ip_user_files/
+fifo_xsim.sim/
+fifo_xsim.runs/
+
+# OS/editor files
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+.DS_Store
